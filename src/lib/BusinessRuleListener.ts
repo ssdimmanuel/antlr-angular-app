@@ -1,16 +1,16 @@
-// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.6-SNAPSHOT
+// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.7.3-SNAPSHOT
 
 
 import { ParseTreeListener } from "antlr4ts/tree/ParseTreeListener";
 
+import { LogicalExpressionContext } from "./BusinessRuleParser";
+import { VariableExpressionContext } from "./BusinessRuleParser";
 import { StringExpressionContext } from "./BusinessRuleParser";
 import { NumberExpressionContext } from "./BusinessRuleParser";
 import { BooleanTrueContext } from "./BusinessRuleParser";
-import { EnclosedExpressionContext } from "./BusinessRuleParser";
 import { BooleanFalseContext } from "./BusinessRuleParser";
 import { BooleanVariableContext } from "./BusinessRuleParser";
-import { LogicalExpressionContext } from "./BusinessRuleParser";
-import { VariableExpressionContext } from "./BusinessRuleParser";
+import { EnclosedExpressionContext } from "./BusinessRuleParser";
 import { ParseContext } from "./BusinessRuleParser";
 import { ExprContext } from "./BusinessRuleParser";
 import { BinopContext } from "./BusinessRuleParser";
@@ -22,6 +22,32 @@ import { CompopContext } from "./BusinessRuleParser";
  * `BusinessRuleParser`.
  */
 export interface BusinessRuleListener extends ParseTreeListener {
+	/**
+	 * Enter a parse tree produced by the `logicalExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 */
+	enterLogicalExpression?: (ctx: LogicalExpressionContext) => void;
+	/**
+	 * Exit a parse tree produced by the `logicalExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 */
+	exitLogicalExpression?: (ctx: LogicalExpressionContext) => void;
+
+	/**
+	 * Enter a parse tree produced by the `variableExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 */
+	enterVariableExpression?: (ctx: VariableExpressionContext) => void;
+	/**
+	 * Exit a parse tree produced by the `variableExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 */
+	exitVariableExpression?: (ctx: VariableExpressionContext) => void;
+
 	/**
 	 * Enter a parse tree produced by the `stringExpression`
 	 * labeled alternative in `BusinessRuleParser.expr`.
@@ -62,19 +88,6 @@ export interface BusinessRuleListener extends ParseTreeListener {
 	exitBooleanTrue?: (ctx: BooleanTrueContext) => void;
 
 	/**
-	 * Enter a parse tree produced by the `enclosedExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 */
-	enterEnclosedExpression?: (ctx: EnclosedExpressionContext) => void;
-	/**
-	 * Exit a parse tree produced by the `enclosedExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 */
-	exitEnclosedExpression?: (ctx: EnclosedExpressionContext) => void;
-
-	/**
 	 * Enter a parse tree produced by the `booleanFalse`
 	 * labeled alternative in `BusinessRuleParser.expr`.
 	 * @param ctx the parse tree
@@ -101,30 +114,17 @@ export interface BusinessRuleListener extends ParseTreeListener {
 	exitBooleanVariable?: (ctx: BooleanVariableContext) => void;
 
 	/**
-	 * Enter a parse tree produced by the `logicalExpression`
+	 * Enter a parse tree produced by the `enclosedExpression`
 	 * labeled alternative in `BusinessRuleParser.expr`.
 	 * @param ctx the parse tree
 	 */
-	enterLogicalExpression?: (ctx: LogicalExpressionContext) => void;
+	enterEnclosedExpression?: (ctx: EnclosedExpressionContext) => void;
 	/**
-	 * Exit a parse tree produced by the `logicalExpression`
+	 * Exit a parse tree produced by the `enclosedExpression`
 	 * labeled alternative in `BusinessRuleParser.expr`.
 	 * @param ctx the parse tree
 	 */
-	exitLogicalExpression?: (ctx: LogicalExpressionContext) => void;
-
-	/**
-	 * Enter a parse tree produced by the `variableExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 */
-	enterVariableExpression?: (ctx: VariableExpressionContext) => void;
-	/**
-	 * Exit a parse tree produced by the `variableExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 */
-	exitVariableExpression?: (ctx: VariableExpressionContext) => void;
+	exitEnclosedExpression?: (ctx: EnclosedExpressionContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `BusinessRuleParser.parse`.

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { ANTLRInputStream, CommonTokenStream } from 'antlr4ts';
 import { ParseTreeWalker } from 'antlr4ts/tree';
-import { BusinessRuleLexer } from './BusinessRuleLexer';
-import { BusinessRuleParser, ParseContext } from './BusinessRuleParser';
 import { ExpressionCounter } from './expr.counter';
+import { BusinessRuleLexer } from 'src/lib/BusinessRuleLexer';
+import { BusinessRuleParser, ParseContext } from 'src/lib/BusinessRuleParser';
 
 @Component({
   selector: 'app-root',

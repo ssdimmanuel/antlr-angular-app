@@ -1,6 +1,5 @@
-
-import { BusinessRuleListener } from './BusinessRuleListener';
-import { ExprContext, NumberExpressionContext } from './BusinessRuleParser';
+import { BusinessRuleListener } from "src/lib/BusinessRuleListener";
+import { ExprContext, NumberExpressionContext } from "src/lib/BusinessRuleParser";
 
 
 export class ExpressionCounter implements BusinessRuleListener {

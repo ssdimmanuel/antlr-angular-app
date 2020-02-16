@@ -1,4 +1,4 @@
-// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.6-SNAPSHOT
+// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.7.3-SNAPSHOT
 
 
 import { ATN } from "antlr4ts/atn/ATN";
@@ -352,28 +352,28 @@ export class BusinessRuleParser extends Parser {
 	}
 
 	public static readonly _serializedATN: string =
-		"\x03\uAF6F\u8320\u479D\uB75C\u4880\u1605\u191C\uAB37\x03\x121\x04\x02" +
+		"\x03\uC91D\uCABA\u058D\uAFBA\u4F53\u0607\uEA8B\uC241\x03\x121\x04\x02" +
 		"\t\x02\x04\x03\t\x03\x04\x04\t\x04\x04\x05\t\x05\x03\x02\x03\x02\x03\x02" +
 		"\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03" +
 		"\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03" +
 		"\x03\x03\x03\x03\x05\x03\"\n\x03\x03\x03\x03\x03\x03\x03\x03\x03\x07\x03" +
 		"(\n\x03\f\x03\x0E\x03+\v\x03\x03\x04\x03\x04\x03\x05\x03\x05\x03\x05\x02" +
 		"\x02\x03\x04\x06\x02\x02\x04\x02\x06\x02\b\x02\x02\x04\x03\x02\x0E\x0F" +
-		"\x03\x02\b\r3\x02\n\x03\x02\x02\x02\x04!\x03\x02\x02\x02\x06,\x03\x02" +
-		"\x02\x02\b.\x03\x02\x02\x02\n\v\x05\x04\x03\x02\v\f\x07\x02\x02\x03\f" +
-		"\x03\x03\x02\x02\x02\r\x0E\b\x03\x01\x02\x0E\x0F\x07\x10\x02\x02\x0F\x10" +
-		"\x05\b\x05\x02\x10\x11\x07\x10\x02\x02\x11\"\x03\x02\x02\x02\x12\x13\x07" +
-		"\x10\x02\x02\x13\x14\x05\b\x05\x02\x14\x15\x07\x05\x02\x02\x15\"\x03\x02" +
-		"\x02\x02\x16\x17\x07\x10\x02\x02\x17\x18\x05\b\x05\x02\x18\x19\x07\x11" +
-		"\x02\x02\x19\"\x03\x02\x02\x02\x1A\"\x07\x03\x02\x02\x1B\"\x07\x04\x02" +
-		"\x02\x1C\"\x07\x10\x02\x02\x1D\x1E\x07\x06\x02\x02\x1E\x1F\x05\x04\x03" +
-		"\x02\x1F \x07\x07\x02\x02 \"\x03\x02\x02\x02!\r\x03\x02\x02\x02!\x12\x03" +
-		"\x02\x02\x02!\x16\x03\x02\x02\x02!\x1A\x03\x02\x02\x02!\x1B\x03\x02\x02" +
-		"\x02!\x1C\x03\x02\x02\x02!\x1D\x03\x02\x02\x02\")\x03\x02\x02\x02#$\f" +
-		"\n\x02\x02$%\x05\x06\x04\x02%&\x05\x04\x03\v&(\x03\x02\x02\x02\'#\x03" +
-		"\x02\x02\x02(+\x03\x02\x02\x02)\'\x03\x02\x02\x02)*\x03\x02\x02\x02*\x05" +
-		"\x03\x02\x02\x02+)\x03\x02\x02\x02,-\t\x02\x02\x02-\x07\x03\x02\x02\x02" +
-		"./\t\x03\x02\x02/\t\x03\x02\x02\x02\x04!)";
+		"\x03\x02\b\r\x023\x02\n\x03\x02\x02\x02\x04!\x03\x02\x02\x02\x06,\x03" +
+		"\x02\x02\x02\b.\x03\x02\x02\x02\n\v\x05\x04\x03\x02\v\f\x07\x02\x02\x03" +
+		"\f\x03\x03\x02\x02\x02\r\x0E\b\x03\x01\x02\x0E\x0F\x07\x10\x02\x02\x0F" +
+		"\x10\x05\b\x05\x02\x10\x11\x07\x10\x02\x02\x11\"\x03\x02\x02\x02\x12\x13" +
+		"\x07\x10\x02\x02\x13\x14\x05\b\x05\x02\x14\x15\x07\x05\x02\x02\x15\"\x03" +
+		"\x02\x02\x02\x16\x17\x07\x10\x02\x02\x17\x18\x05\b\x05\x02\x18\x19\x07" +
+		"\x11\x02\x02\x19\"\x03\x02\x02\x02\x1A\"\x07\x03\x02\x02\x1B\"\x07\x04" +
+		"\x02\x02\x1C\"\x07\x10\x02\x02\x1D\x1E\x07\x06\x02\x02\x1E\x1F\x05\x04" +
+		"\x03\x02\x1F \x07\x07\x02\x02 \"\x03\x02\x02\x02!\r\x03\x02\x02\x02!\x12" +
+		"\x03\x02\x02\x02!\x16\x03\x02\x02\x02!\x1A\x03\x02\x02\x02!\x1B\x03\x02" +
+		"\x02\x02!\x1C\x03\x02\x02\x02!\x1D\x03\x02\x02\x02\")\x03\x02\x02\x02" +
+		"#$\f\n\x02\x02$%\x05\x06\x04\x02%&\x05\x04\x03\v&(\x03\x02\x02\x02\'#" +
+		"\x03\x02\x02\x02(+\x03\x02\x02\x02)\'\x03\x02\x02\x02)*\x03\x02\x02\x02" +
+		"*\x05\x03\x02\x02\x02+)\x03\x02\x02\x02,-\t\x02\x02\x02-\x07\x03\x02\x02" +
+		"\x02./\t\x03\x02\x02/\t\x03\x02\x02\x02\x04!)";
 	public static __ATN: ATN;
 	public static get _ATN(): ATN {
 		if (!BusinessRuleParser.__ATN) {
@@ -426,6 +426,84 @@ export class ExprContext extends ParserRuleContext {
 	public get ruleIndex(): number { return BusinessRuleParser.RULE_expr; }
 	public copyFrom(ctx: ExprContext): void {
 		super.copyFrom(ctx);
+	}
+}
+export class LogicalExpressionContext extends ExprContext {
+	public expr(): ExprContext[];
+	public expr(i: number): ExprContext;
+	public expr(i?: number): ExprContext | ExprContext[] {
+		if (i === undefined) {
+			return this.getRuleContexts(ExprContext);
+		} else {
+			return this.getRuleContext(i, ExprContext);
+		}
+	}
+	public binop(): BinopContext {
+		return this.getRuleContext(0, BinopContext);
+	}
+	constructor(ctx: ExprContext) {
+		super(ctx.parent, ctx.invokingState);
+		this.copyFrom(ctx);
+	}
+	// @Override
+	public enterRule(listener: BusinessRuleListener): void {
+		if (listener.enterLogicalExpression) {
+			listener.enterLogicalExpression(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: BusinessRuleListener): void {
+		if (listener.exitLogicalExpression) {
+			listener.exitLogicalExpression(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: BusinessRuleVisitor<Result>): Result {
+		if (visitor.visitLogicalExpression) {
+			return visitor.visitLogicalExpression(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
+}
+export class VariableExpressionContext extends ExprContext {
+	public _lhs: Token;
+	public _rhs: Token;
+	public compop(): CompopContext {
+		return this.getRuleContext(0, CompopContext);
+	}
+	public VARIABLE(): TerminalNode[];
+	public VARIABLE(i: number): TerminalNode;
+	public VARIABLE(i?: number): TerminalNode | TerminalNode[] {
+		if (i === undefined) {
+			return this.getTokens(BusinessRuleParser.VARIABLE);
+		} else {
+			return this.getToken(BusinessRuleParser.VARIABLE, i);
+		}
+	}
+	constructor(ctx: ExprContext) {
+		super(ctx.parent, ctx.invokingState);
+		this.copyFrom(ctx);
+	}
+	// @Override
+	public enterRule(listener: BusinessRuleListener): void {
+		if (listener.enterVariableExpression) {
+			listener.enterVariableExpression(this);
+		}
+	}
+	// @Override
+	public exitRule(listener: BusinessRuleListener): void {
+		if (listener.exitVariableExpression) {
+			listener.exitVariableExpression(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: BusinessRuleVisitor<Result>): Result {
+		if (visitor.visitVariableExpression) {
+			return visitor.visitVariableExpression(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
 	}
 }
 export class StringExpressionContext extends ExprContext {
@@ -521,37 +599,6 @@ export class BooleanTrueContext extends ExprContext {
 		}
 	}
 }
-export class EnclosedExpressionContext extends ExprContext {
-	public LEFTPAREN(): TerminalNode { return this.getToken(BusinessRuleParser.LEFTPAREN, 0); }
-	public expr(): ExprContext {
-		return this.getRuleContext(0, ExprContext);
-	}
-	public RIGHTPAREN(): TerminalNode { return this.getToken(BusinessRuleParser.RIGHTPAREN, 0); }
-	constructor(ctx: ExprContext) {
-		super(ctx.parent, ctx.invokingState);
-		this.copyFrom(ctx);
-	}
-	// @Override
-	public enterRule(listener: BusinessRuleListener): void {
-		if (listener.enterEnclosedExpression) {
-			listener.enterEnclosedExpression(this);
-		}
-	}
-	// @Override
-	public exitRule(listener: BusinessRuleListener): void {
-		if (listener.exitEnclosedExpression) {
-			listener.exitEnclosedExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: BusinessRuleVisitor<Result>): Result {
-		if (visitor.visitEnclosedExpression) {
-			return visitor.visitEnclosedExpression(this);
-		} else {
-			return visitor.visitChildren(this);
-		}
-	}
-}
 export class BooleanFalseContext extends ExprContext {
 	public FALSE(): TerminalNode { return this.getToken(BusinessRuleParser.FALSE, 0); }
 	constructor(ctx: ExprContext) {
@@ -606,79 +653,32 @@ export class BooleanVariableContext extends ExprContext {
 		}
 	}
 }
-export class LogicalExpressionContext extends ExprContext {
-	public expr(): ExprContext[];
-	public expr(i: number): ExprContext;
-	public expr(i?: number): ExprContext | ExprContext[] {
-		if (i === undefined) {
-			return this.getRuleContexts(ExprContext);
-		} else {
-			return this.getRuleContext(i, ExprContext);
-		}
+export class EnclosedExpressionContext extends ExprContext {
+	public LEFTPAREN(): TerminalNode { return this.getToken(BusinessRuleParser.LEFTPAREN, 0); }
+	public expr(): ExprContext {
+		return this.getRuleContext(0, ExprContext);
 	}
-	public binop(): BinopContext {
-		return this.getRuleContext(0, BinopContext);
-	}
+	public RIGHTPAREN(): TerminalNode { return this.getToken(BusinessRuleParser.RIGHTPAREN, 0); }
 	constructor(ctx: ExprContext) {
 		super(ctx.parent, ctx.invokingState);
 		this.copyFrom(ctx);
 	}
 	// @Override
 	public enterRule(listener: BusinessRuleListener): void {
-		if (listener.enterLogicalExpression) {
-			listener.enterLogicalExpression(this);
+		if (listener.enterEnclosedExpression) {
+			listener.enterEnclosedExpression(this);
 		}
 	}
 	// @Override
 	public exitRule(listener: BusinessRuleListener): void {
-		if (listener.exitLogicalExpression) {
-			listener.exitLogicalExpression(this);
+		if (listener.exitEnclosedExpression) {
+			listener.exitEnclosedExpression(this);
 		}
 	}
 	// @Override
 	public accept<Result>(visitor: BusinessRuleVisitor<Result>): Result {
-		if (visitor.visitLogicalExpression) {
-			return visitor.visitLogicalExpression(this);
-		} else {
-			return visitor.visitChildren(this);
-		}
-	}
-}
-export class VariableExpressionContext extends ExprContext {
-	public _lhs: Token;
-	public _rhs: Token;
-	public compop(): CompopContext {
-		return this.getRuleContext(0, CompopContext);
-	}
-	public VARIABLE(): TerminalNode[];
-	public VARIABLE(i: number): TerminalNode;
-	public VARIABLE(i?: number): TerminalNode | TerminalNode[] {
-		if (i === undefined) {
-			return this.getTokens(BusinessRuleParser.VARIABLE);
-		} else {
-			return this.getToken(BusinessRuleParser.VARIABLE, i);
-		}
-	}
-	constructor(ctx: ExprContext) {
-		super(ctx.parent, ctx.invokingState);
-		this.copyFrom(ctx);
-	}
-	// @Override
-	public enterRule(listener: BusinessRuleListener): void {
-		if (listener.enterVariableExpression) {
-			listener.enterVariableExpression(this);
-		}
-	}
-	// @Override
-	public exitRule(listener: BusinessRuleListener): void {
-		if (listener.exitVariableExpression) {
-			listener.exitVariableExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: BusinessRuleVisitor<Result>): Result {
-		if (visitor.visitVariableExpression) {
-			return visitor.visitVariableExpression(this);
+		if (visitor.visitEnclosedExpression) {
+			return visitor.visitEnclosedExpression(this);
 		} else {
 			return visitor.visitChildren(this);
 		}

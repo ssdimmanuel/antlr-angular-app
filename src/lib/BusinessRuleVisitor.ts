@@ -1,16 +1,16 @@
-// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.6-SNAPSHOT
+// Generated from ./src/antlr/BusinessRule.g4 by ANTLR 4.7.3-SNAPSHOT
 
 
 import { ParseTreeVisitor } from "antlr4ts/tree/ParseTreeVisitor";
 
+import { LogicalExpressionContext } from "./BusinessRuleParser";
+import { VariableExpressionContext } from "./BusinessRuleParser";
 import { StringExpressionContext } from "./BusinessRuleParser";
 import { NumberExpressionContext } from "./BusinessRuleParser";
 import { BooleanTrueContext } from "./BusinessRuleParser";
-import { EnclosedExpressionContext } from "./BusinessRuleParser";
 import { BooleanFalseContext } from "./BusinessRuleParser";
 import { BooleanVariableContext } from "./BusinessRuleParser";
-import { LogicalExpressionContext } from "./BusinessRuleParser";
-import { VariableExpressionContext } from "./BusinessRuleParser";
+import { EnclosedExpressionContext } from "./BusinessRuleParser";
 import { ParseContext } from "./BusinessRuleParser";
 import { ExprContext } from "./BusinessRuleParser";
 import { BinopContext } from "./BusinessRuleParser";
@@ -25,6 +25,22 @@ import { CompopContext } from "./BusinessRuleParser";
  * operations with no return type.
  */
 export interface BusinessRuleVisitor<Result> extends ParseTreeVisitor<Result> {
+	/**
+	 * Visit a parse tree produced by the `logicalExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitLogicalExpression?: (ctx: LogicalExpressionContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by the `variableExpression`
+	 * labeled alternative in `BusinessRuleParser.expr`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitVariableExpression?: (ctx: VariableExpressionContext) => Result;
+
 	/**
 	 * Visit a parse tree produced by the `stringExpression`
 	 * labeled alternative in `BusinessRuleParser.expr`.
@@ -50,14 +66,6 @@ export interface BusinessRuleVisitor<Result> extends ParseTreeVisitor<Result> {
 	visitBooleanTrue?: (ctx: BooleanTrueContext) => Result;
 
 	/**
-	 * Visit a parse tree produced by the `enclosedExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitEnclosedExpression?: (ctx: EnclosedExpressionContext) => Result;
-
-	/**
 	 * Visit a parse tree produced by the `booleanFalse`
 	 * labeled alternative in `BusinessRuleParser.expr`.
 	 * @param ctx the parse tree
@@ -74,20 +82,12 @@ export interface BusinessRuleVisitor<Result> extends ParseTreeVisitor<Result> {
 	visitBooleanVariable?: (ctx: BooleanVariableContext) => Result;
 
 	/**
-	 * Visit a parse tree produced by the `logicalExpression`
+	 * Visit a parse tree produced by the `enclosedExpression`
 	 * labeled alternative in `BusinessRuleParser.expr`.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	visitLogicalExpression?: (ctx: LogicalExpressionContext) => Result;
-
-	/**
-	 * Visit a parse tree produced by the `variableExpression`
-	 * labeled alternative in `BusinessRuleParser.expr`.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	visitVariableExpression?: (ctx: VariableExpressionContext) => Result;
+	visitEnclosedExpression?: (ctx: EnclosedExpressionContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `BusinessRuleParser.parse`.
