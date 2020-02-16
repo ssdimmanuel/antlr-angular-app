@@ -1,17 +1,20 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
+<div fxLayout="column" fxLayoutGap="1em"style="margin: 20px;">
+  <div style="text-align:center">
+    <h1>
+      {{ title }}
+    </h1>
+  </div>
+  <div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <textarea matInput [(ngModel)]="rulefield" name="rule" placeholder="Enter a Rule"></textarea>
+      </mat-form-field>
+    </form>
+    <button (click)="parse()" mat-raised-button color="primary">parse</button>
+  </div>
+  <span>Expression Count : {{expc}}</span>
+  <mat-list>
+    <mat-list-item *ngFor="let exp1 of exprs">{{exp1}}</mat-list-item>
+  </mat-list>
+
 </div>
-<div>
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <textarea matInput [(ngModel)]="rulefield" name="rule" placeholder="Enter a Rule"></textarea>
-    </mat-form-field>
-  </form>
-  <button (click)="parse()" mat-raised-button color="primary">parse</button>
-</div>
-<p>
-  Expression Count : {{expc}}
-</p>

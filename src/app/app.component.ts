@@ -4,6 +4,8 @@ import { ParseTreeWalker } from 'antlr4ts/tree';
 import { ExpressionCounter } from './expr.counter';
 import { BusinessRuleLexer } from 'src/lib/BusinessRuleLexer';
 import { BusinessRuleParser, ParseContext } from 'src/lib/BusinessRuleParser';
+import { ExpressionCollector } from './expr.collector';
+import { RuleParseService } from './services/rule-parse.service';
 
 @Component({
   selector: 'app-root',
@@ -21,8 +23,9 @@ export class AppComponent {
   tree: ParseContext;
   inputStream: ANTLRInputStream;
   ec: ExpressionCounter;
+  exprs: Array<string>
 
-  constructor() {
+  constructor(private parseService: RuleParseService) {
     this.rulefield = 'a = 10 & b = 5';
   }
 
@@ -36,9 +39,17 @@ export class AppComponent {
     this.ec = new ExpressionCounter();
 
     ParseTreeWalker.DEFAULT.walk(this.ec, this.tree);
+
+    let exp = new ExpressionCollector()
+
+    this.parseService.parse(this.rulefield, exp)
+
+    this.exprs = exp.getExpressions()
+
     // this.rulefield += this.ec.getCount();
     this.expc = this.ec.getCount();
     // console.log(this.tree);
     console.log(this.ec.getCount());
+    console.log(this.exprs)
   }
 }
